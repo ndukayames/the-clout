@@ -1,1 +1,28 @@
+server:
+  port: 8181
 
+spring:
+  devtools:
+    livereload:
+      enabled: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/the-clout
+    username: root
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  main:
+    allow-circular-references: true
+logging:
+  level:
+    org:
+      springframework:
+        security: debug
+tca:
+  app:
+    jwtSecret: the-clout-app
+    jwtExpirationMs: 144000

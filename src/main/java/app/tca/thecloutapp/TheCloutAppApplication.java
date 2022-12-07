@@ -6,8 +6,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class TheCloutAppApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(TheCloutAppApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(TheCloutAppApplication.class, args);
+    }
 
 }
